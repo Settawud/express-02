@@ -1,0 +1,41 @@
+
+### POST request to add new notes
+
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+  "title": "JavaScript object",
+  "content": "A JavaScript object is used to store and organise related data and functionality as key-value pairs.",
+  "tags": ["js", "express"]
+}
+
+### GET request to read notes
+GET http://localhost:3000/notes
+
+### DELETE request to delete notes
+DELETE http://localhost:3000/notes/2
+
+### PATCH request to update notes
+PATCH http://localhost:3000/notes/1
+Content-Type: application/json
+
+{
+  "title": "JavaScript object",
+  "content": "A JavaScript object is used to store and organise related data and functionality as key-value pairs.",
+  "tags": ["js", "express"]
+}
+
+### DELETE request to delete all notes
+DELETE http://localhost:3000/notes
+
+
+### PUT request to update notes
+PUT http://localhost:3000/notes/3
+Content-Type: application/json
+
+{
+  "title": "JavaScript object",
+  "content": "A JavaScript object is used to store and organise related data and functionality as key-value pairs.",
+  "tags": ["js", "express"]
+}
